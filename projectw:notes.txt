@@ -1,0 +1,19 @@
+0 load second factor (F) 0x100F
+1 subt one from it 0x4012
+2 store into counter (11) 0x2011
+3 (loop) Load product (10) 0x1010
+4 add first factor (E) 0x300E
+5 store product (10) 0x2010
+6 load counter (11) 0x1011
+7 subt one from counter 0x4012
+8 store into counter (11) 0x2011
+9 skipcond 000 (if counter is <0) 0x8000
+A jump to loop (3) 0x9003
+B load product (10) 0x1010
+C Output 0x6000
+D Halt 0x7000
+E first factor 0x0A00
+F Second factor 0x00C0
+10 product 0x0000
+11 counter 0x0000
+12 one 0x0001
